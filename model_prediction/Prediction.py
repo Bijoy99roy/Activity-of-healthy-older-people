@@ -23,7 +23,6 @@ class Prediction:
 
         try:
             self.logger.log(self.table_name, 'Start of Prediction', 'Info')
-            preprocessing = PreProcessing(self.logger, self.table_name)
             # initializing FileHandler object
             file_handler = FileHandler(self.table_name, self.logger)
             # getting the data file path
